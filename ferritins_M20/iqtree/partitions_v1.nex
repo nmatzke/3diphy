@@ -1,0 +1,7 @@
+#nexus
+begin sets;
+charset aminos = AA, 1-748;
+charset threeDi = AA, 749-1496;
+charpartition mine = LG+F+G:aminos ,
+3di_substmat+F+G:threeDi;
+end;

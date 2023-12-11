@@ -1,0 +1,352 @@
+IQ-TREE 2.2.2.6 COVID-edition built May 27 2023
+
+Partition file name: partitions_v1.raxml
+Input file name: USalign_53_ferritin_both_FULL.fasta.aln
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 427757
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 53 taxa with 2 partitions and 1980 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	53	990	836	350	330	330	part1
+   2	AA	53	990	733	339	383	383	part2
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Blosum62+F+R3:part1,3DI+F+R3:part2
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  Blosum62+F+R3    -25038.544   50125.089 + 6.95e-310   50126.332 - 6.95e-310   50242.634 - 6.94e-310
+   2  3DI+F+R3         -15834.366   31716.733 + 6.95e-310   31717.976 - 6.95e-310   31834.278 - 6.94e-310
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  Blosum62+F+R3  1.4160  Blosum62+F+R3{0.0844897,0.41342,0.787115,0.911931,0.128395,1.9259}
+   2  3DI+F+R3       0.5840  3DI+F+R3{0.095789,0.158457,0.424564,0.69504,0.479647,1.438}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -40816.9137 (s.e. 1242.7273)
+Unconstrained log-likelihood (without tree): -12844.3622
+Number of free parameters (#branches + #model parameters): 150
+Akaike information criterion (AIC) score: 81933.8274
+Corrected Akaike information criterion (AICc) score: 81958.5950
+Bayesian information criterion (BIC) score: 82772.4552
+
+Total tree length (sum of branch lengths): 35.9756
+Sum of internal branch lengths: 13.7057 (38.0970% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon '1ji5_A.pdb' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++--1ji5_A.pdb
+|
+|     +--1jig_A.pdb
+|  +--| (78.5/66)
+|  |  |        +--1qgh_A.pdb
+|  |  |     +--| (99.7/100)
+|  |  |     |  +-----2ux1_A.pdb
+|  |  |  +--| (76.4/61)
+|  |  |  |  |  +------1ji4_A.pdb
+|  |  |  |  +--| (89.2/79)
+|  |  |  |     +----2fjc_A.pdb
+|  |  +--| (92.8/82)
+|  |     |               +--1dps_A.pdb
+|  |     |            +--| (99.5/100)
+|  |     |            |  +--1jts_A.pdb
+|  |     |        +---| (99.2/100)
+|  |     |        |   +--1o9r_A.pdb
+|  |     |     +--| (96.8/97)
+|  |     |     |  +--------1uvh_A.pdb
+|  |     |  +--| (94.4/89)
+|  |     |  |  |       +--1tjo_A.pdb
+|  |     |  |  +-------| (100/100)
+|  |     |  |          +--1tk6_A.pdb
+|  |     +--| (89/84)
+|  |        |             +-----------------2fzf_A.pdb
+|  |        |        +----| (93.4/57)
+|  |        |        |    |      +-------1lko_A.pdb
+|  |        |        |    |   +--| (92.2/93)
+|  |        |        |    |   |  +--------1yuz_A.pdb
+|  |        |        |    +---| (72.1/83)
+|  |        |        |        +-------3qhb_A.pdb
+|  |        |     +--| (68.9/32)
+|  |        |     |  |                    +--1lb3_A.pdb
+|  |        |     |  |                 +--| (100/98)
+|  |        |     |  |                 |  +--2za7_A.pdb
+|  |        |     |  |              +--| (35.1/47)
+|  |        |     |  |              |  +--1bg7_A.pdb
+|  |        |     |  |           +--| (92/69)
+|  |        |     |  |           |  +--1r03_A.pdb
+|  |        |     |  |        +--| (99.6/97)
+|  |        |     |  |        |  |  +-------------1z6o_A.pdb
+|  |        |     |  |        |  +--| (46.1/60)
+|  |        |     |  |        |     +------1z6o_M.pdb
+|  |        |     |  |     +--| (74.8/77)
+|  |        |     |  |     |  +-------3e6s_A.pdb
+|  |        |     |  +-----| (99.7/100)
+|  |        |     |        |     +---1eum_A.pdb
+|  |        |     |        |  +--| (98.7/98)
+|  |        |     |        |  |  +---1krq_A.pdb
+|  |        |     |        +--| (59.2/68)
+|  |        |     |           |  +--2jd7_A.pdb
+|  |        |     |           +--| (83.6/78)
+|  |        |     |              +--1vlg_A.pdb
+|  |        |  +--| (97.7/48)
+|  |        |  |  |            +--1bcf_A.pdb
+|  |        |  |  |         +--| (96.8/92)
+|  |        |  |  |         |  +--3e1q_A.pdb
+|  |        |  |  |      +--| (98.3/99)
+|  |        |  |  |      |  +--2fkz_A.pdb
+|  |        |  |  |  +---| (99.5/100)
+|  |        |  |  |  |   +--1jgc_A.pdb
+|  |        |  |  +--| (55.7/51)
+|  |        |  |     +------1nfv_A.pdb
+|  |        +--| (98.3/98)
+|  |           |  +--------2vzb_A.pdb
+|  |           +--| (28.7/25)
+|  |              |          +-------------------1otk_A.pdb
+|  |              +----------| (99.6/99)
+|  |                         |                               +--1oqu_A.pdb
+|  |                         |                            +--| (40.7/54)
+|  |                         |                            |  +--1uzr_A.pdb
+|  |                         |                    +-------| (100/100)
+|  |                         |                    |       +--1r2f_A.pdb
+|  |                         |                 +--| (93.5/91)
+|  |                         |                 |  +--------1mxr_A.pdb
+|  |                         |             +---| (94.2/94)
+|  |                         |             |   |           +-----1jk0_A.pdb
+|  |                         |             |   |        +--| (68.3/64)
+|  |                         |             |   |        |  +--2uw2_A.pdb
+|  |                         |             |   +--------| (100/100)
+|  |                         |             |            +--1w68_A.pdb
+|  |                         |         +---| (76.5/75)
+|  |                         |         |   +-------------3ee4_A.pdb
+|  |                         |     +---| (89.9/93)
+|  |                         |     |   |                         +--2uw1_A.pdb
+|  |                         |     |   |                      +--| (88.3/83)
+|  |                         |     |   |                      |  +--2uw1_B.pdb
+|  |                         |     |   |        +-------------| (99.9/100)
+|  |                         |     |   |        |             +--1afr_A.pdb
+|  |                         |     |   +--------| (98.7/99)
+|  |                         |     |            +---------------1za0_A.pdb
+|  |                         +-----| (92.7/95)
+|  |                               |         +---------2inc_B.pdb
+|  |                               |      +--| (90.2/85)
+|  |                               |      |  |  +----------2inp_C.pdb
+|  |                               |      |  +--| (96.2/94)
+|  |                               |      |     +---------------1mty_B.pdb
+|  |                               +------| (99.1/99)
+|  |                                      |     +--------------1mty_D.pdb
+|  |                                      +-----| (99/100)
+|  |                                            +------------3dhg_A.pdb
++--| (78.7/71)
+|  +--1n1q_A.pdb
+|
++----2chp_A.pdb
+
+Tree in newick format:
+
+(1ji5_A.pdb:0.2268620467,((1jig_A.pdb:0.1676339219,(((1qgh_A.pdb:0.2251977576,2ux1_A.pdb:0.4219807151)99.7/100:0.2335454877,(1ji4_A.pdb:0.4848340064,2fjc_A.pdb:0.4093884818)89.2/79:0.1786605996)76.4/61:0.0696199171,(((((1dps_A.pdb:0.0678268928,1jts_A.pdb:0.0596050946)99.5/100:0.2411598354,1o9r_A.pdb:0.2045353477)99.2/100:0.3185459595,1uvh_A.pdb:0.6560407320)96.8/97:0.2200119118,(1tjo_A.pdb:0.0251307594,1tk6_A.pdb:0.0239400417)100/100:0.6106921163)94.4/89:0.2409694062,((((2fzf_A.pdb:1.2624485442,((1lko_A.pdb:0.5555578715,1yuz_A.pdb:0.6843263309)92.2/93:0.2684389643,3qhb_A.pdb:0.6110108796)72.1/83:0.2836071375)93.4/57:0.4063075983,((((((1lb3_A.pdb:0.0703915703,2za7_A.pdb:0.0947269001)100/98:0.2314301487,1bg7_A.pdb:0.1584226834)35.1/47:0.0518274784,1r03_A.pdb:0.1975681141)92/69:0.1363363552,(1z6o_A.pdb:1.0145241803,1z6o_M.pdb:0.5442606536)46.1/60:0.1860300251)99.6/97:0.2717678539,3e6s_A.pdb:0.5497181882)74.8/77:0.1158781878,((1eum_A.pdb:0.2866969686,1krq_A.pdb:0.3145238277)98.7/98:0.1971015520,(2jd7_A.pdb:0.1989538713,1vlg_A.pdb:0.2476949121)83.6/78:0.1062951692)59.2/68:0.0925450487)99.7/100:0.4660199929)68.9/32:0.2049383045,((((1bcf_A.pdb:0.0831896109,3e1q_A.pdb:0.0860257930)96.8/92:0.1533384712,2fkz_A.pdb:0.1584656836)98.3/99:0.1837919064,1jgc_A.pdb:0.2610978443)99.5/100:0.3204947060,1nfv_A.pdb:0.5374658083)55.7/51:0.0860687178)97.7/48:0.2550688460,(2vzb_A.pdb:0.6688990253,(1otk_A.pdb:1.3916708446,(((((((1oqu_A.pdb:0.1815791150,1uzr_A.pdb:0.1038029663)40.7/54:0.0612458193,1r2f_A.pdb:0.1442877072)100/100:0.5721574668,1mxr_A.pdb:0.6743613671)93.5/91:0.2125375383,((1jk0_A.pdb:0.4213843668,2uw2_A.pdb:0.1062859394)68.3/64:0.0471094743,1w68_A.pdb:0.0766791805)100/100:0.6448326266)94.2/94:0.2747813578,3ee4_A.pdb:1.0169819581)76.5/75:0.2786906675,(((2uw1_A.pdb:0.0443956384,2uw1_B.pdb:0.0633954270)88.3/83:0.0994827067,1afr_A.pdb:0.1441572203)99.9/100:0.9877973621,1za0_A.pdb:1.1558542999)98.7/99:0.6770804266)89.9/93:0.3135873280,((2inc_B.pdb:0.7332806907,(2inp_C.pdb:0.7684691765,1mty_B.pdb:1.1239309617)96.2/94:0.2207277948)90.2/85:0.2257115992,(1mty_D.pdb:1.0494301971,3dhg_A.pdb:0.8982792077)99/100:0.4498190939)99.1/99:0.5399456498)92.7/95:0.4498850069)99.6/99:0.7870660178)28.7/25:0.1268467982)98.3/98:0.2597886944)89/84:0.1151232808)92.8/82:0.0815435128)78.5/66:0.0560929249,1n1q_A.pdb:0.2229171014)78.7/71:0.0933065675,2chp_A.pdb:0.3898914386);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -40817.941526
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--1ji5_A.pdb
+|
+|     +--1jig_A.pdb
+|  +--| (66)
+|  |  |        +--1qgh_A.pdb
+|  |  |     +--| (100)
+|  |  |     |  +-----2ux1_A.pdb
+|  |  |  +--| (61)
+|  |  |  |  |  +------1ji4_A.pdb
+|  |  |  |  +--| (79)
+|  |  |  |     +-----2fjc_A.pdb
+|  |  +--| (82)
+|  |     |               +--1dps_A.pdb
+|  |     |            +--| (100)
+|  |     |            |  +--1jts_A.pdb
+|  |     |        +---| (100)
+|  |     |        |   +--1o9r_A.pdb
+|  |     |     +--| (97)
+|  |     |     |  +--------1uvh_A.pdb
+|  |     |  +--| (89)
+|  |     |  |  |       +--1tjo_A.pdb
+|  |     |  |  +-------| (100)
+|  |     |  |          +--1tk6_A.pdb
+|  |     +--| (84)
+|  |        |                +-----------------2fzf_A.pdb
+|  |        |           +----| (57)
+|  |        |           |    |      +-------1lko_A.pdb
+|  |        |           |    |   +--| (93)
+|  |        |           |    |   |  +---------1yuz_A.pdb
+|  |        |           |    +---| (83)
+|  |        |           |        +-------3qhb_A.pdb
+|  |        |        +--| (32)
+|  |        |        |  |                     +--1lb3_A.pdb
+|  |        |        |  |                  +--| (98)
+|  |        |        |  |                  |  +--2za7_A.pdb
+|  |        |        |  |               +--| (47)
+|  |        |        |  |               |  +--1bg7_A.pdb
+|  |        |        |  |            +--| (69)
+|  |        |        |  |            |  +--1r03_A.pdb
+|  |        |        |  |        +---| (97)
+|  |        |        |  |        |   |  +-------------1z6o_A.pdb
+|  |        |        |  |        |   +--| (60)
+|  |        |        |  |        |      +-------1z6o_M.pdb
+|  |        |        |  |     +--| (77)
+|  |        |        |  |     |  +-------3e6s_A.pdb
+|  |        |        |  +-----| (100)
+|  |        |        |        |     +---1eum_A.pdb
+|  |        |        |        |  +--| (98)
+|  |        |        |        |  |  +---1krq_A.pdb
+|  |        |        |        +--| (68)
+|  |        |        |           |  +--2jd7_A.pdb
+|  |        |        |           +--| (78)
+|  |        |        |              +--1vlg_A.pdb
+|  |        |     +--| (48)
+|  |        |     |  |            +--1bcf_A.pdb
+|  |        |     |  |         +--| (92)
+|  |        |     |  |         |  +--3e1q_A.pdb
+|  |        |     |  |      +--| (99)
+|  |        |     |  |      |  +--2fkz_A.pdb
+|  |        |     |  |  +---| (100)
+|  |        |     |  |  |   +--1jgc_A.pdb
+|  |        |     |  +--| (51)
+|  |        |     |     +------1nfv_A.pdb
+|  |        |  +--| (36)
+|  |        |  |  |           +------------------1otk_A.pdb
+|  |        |  |  +-----------| (99)
+|  |        |  |              |                               +--1oqu_A.pdb
+|  |        |  |              |                            +--| (54)
+|  |        |  |              |                            |  +--1uzr_A.pdb
+|  |        |  |              |                    +-------| (100)
+|  |        |  |              |                    |       +--1r2f_A.pdb
+|  |        |  |              |                 +--| (91)
+|  |        |  |              |                 |  +--------1mxr_A.pdb
+|  |        |  |              |             +---| (94)
+|  |        |  |              |             |   |           +-----1jk0_A.pdb
+|  |        |  |              |             |   |        +--| (64)
+|  |        |  |              |             |   |        |  +--2uw2_A.pdb
+|  |        |  |              |             |   +--------| (100)
+|  |        |  |              |             |            +--1w68_A.pdb
+|  |        |  |              |         +---| (75)
+|  |        |  |              |         |   +-------------3ee4_A.pdb
+|  |        |  |              |     +---| (93)
+|  |        |  |              |     |   |                         +--2uw1_A.pdb
+|  |        |  |              |     |   |                      +--| (83)
+|  |        |  |              |     |   |                      |  +--2uw1_B.pdb
+|  |        |  |              |     |   |        +-------------| (100)
+|  |        |  |              |     |   |        |             +--1afr_A.pdb
+|  |        |  |              |     |   +--------| (99)
+|  |        |  |              |     |            +----------------1za0_A.pdb
+|  |        |  |              +-----| (95)
+|  |        |  |                    |         +---------2inc_B.pdb
+|  |        |  |                    |      +--| (85)
+|  |        |  |                    |      |  |  +----------2inp_C.pdb
+|  |        |  |                    |      |  +--| (94)
+|  |        |  |                    |      |     +---------------1mty_B.pdb
+|  |        |  |                    +------| (99)
+|  |        |  |                           |     +--------------1mty_D.pdb
+|  |        |  |                           +-----| (100)
+|  |        |  |                                 +------------3dhg_A.pdb
+|  |        +--| (98)
+|  |           +----------2vzb_A.pdb
++--| (71)
+|  +--1n1q_A.pdb
+|
++----2chp_A.pdb
+
+
+Consensus tree in newick format: 
+
+(1ji5_A.pdb:0.2266948151,((1jig_A.pdb:0.1667752168,(((1qgh_A.pdb:0.2259886418,2ux1_A.pdb:0.4208728361)100:0.2324879260,(1ji4_A.pdb:0.4851677612,2fjc_A.pdb:0.4086754931)79:0.1785914112)61:0.0701810430,(((((1dps_A.pdb:0.0675482005,1jts_A.pdb:0.0598134385)100:0.2420548733,1o9r_A.pdb:0.2032062807)100:0.3179257046,1uvh_A.pdb:0.6557146605)97:0.2197718055,(1tjo_A.pdb:0.0256322774,1tk6_A.pdb:0.0234065780)100:0.6095650312)89:0.2423737353,(((((2fzf_A.pdb:1.2668390110,((1lko_A.pdb:0.5570507054,1yuz_A.pdb:0.6820507394)93:0.2703110734,3qhb_A.pdb:0.6069745442)83:0.2784900934)57:0.4073062262,((((((1lb3_A.pdb:0.0703712624,2za7_A.pdb:0.0946419328)98:0.2313275367,1bg7_A.pdb:0.1582703693)47:0.0518753227,1r03_A.pdb:0.1973860500)69:0.1356519122,(1z6o_A.pdb:1.0135660038,1z6o_M.pdb:0.5443223552)60:0.1862851447)97:0.2722432180,3e6s_A.pdb:0.5491097318)77:0.1155888000,((1eum_A.pdb:0.2858733235,1krq_A.pdb:0.3149026732)98:0.1969948815,(2jd7_A.pdb:0.1981514450,1vlg_A.pdb:0.2482246432)78:0.1062306954)68:0.0929333543)100:0.4649405047)32:0.2001551171,((((1bcf_A.pdb:0.0830910767,3e1q_A.pdb:0.0859899022)92:0.1532927980,2fkz_A.pdb:0.1582850585)99:0.1834343956,1jgc_A.pdb:0.2608527278)100:0.3191648965,1nfv_A.pdb:0.5371955133)51:0.0927009626)48:0.2623970240,(1otk_A.pdb:1.3573031508,(((((((1oqu_A.pdb:0.1814855396,1uzr_A.pdb:0.1037411989)54:0.0610120637,1r2f_A.pdb:0.1444394242)100:0.5720377637,1mxr_A.pdb:0.6737226930)91:0.2124202964,((1jk0_A.pdb:0.4212964237,2uw2_A.pdb:0.1061531590)64:0.0471396337,1w68_A.pdb:0.0765967050)100:0.6437970205)94:0.2741115157,3ee4_A.pdb:1.0147205645)75:0.2782484077,(((2uw1_A.pdb:0.0443576624,2uw1_B.pdb:0.0633848813)83:0.0983028961,1afr_A.pdb:0.1454398144)100:0.9813660487,1za0_A.pdb:1.1578900795)99:0.6787913121)93:0.3150865471,((2inc_B.pdb:0.7314334627,(2inp_C.pdb:0.7691841748,1mty_B.pdb:1.1223419089)94:0.2201711410)85:0.2240747376,(1mty_D.pdb:1.0476070225,3dhg_A.pdb:0.8990539256)100:0.4525469748)99:0.5356481599)95:0.4691789136)99:0.8425314414)36:0.0000021858,2vzb_A.pdb:0.7790722157)98:0.2692649815)84:0.1137901225)82:0.0819598517)66:0.0560204889,1n1q_A.pdb:0.2237884465)71:0.0927841920,2chp_A.pdb:0.3897915181);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t partitions_v1.raxml.treefile -p partitions_v1.raxml.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s USalign_53_ferritin_both_FULL.fasta.aln --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s USalign_53_ferritin_both_FULL.fasta.aln --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Nov  7 01:30:36 2023
+Total CPU time used: 1782.028485 seconds (0h:29m:42s)
+Total wall-clock time used: 1788.046674 seconds (0h:29m:48s)
+

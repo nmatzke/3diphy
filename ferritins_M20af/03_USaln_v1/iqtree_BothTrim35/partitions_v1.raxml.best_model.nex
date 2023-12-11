@@ -1,0 +1,8 @@
+#nexus
+begin sets;
+  charset part1 = AA, 1-191;
+  charset part2 = AA, 192-382;
+  charpartition mymodels =
+    MIX{BurEX3,IntEX3,HExEX3}+G4{4.65291}: part1{78.2294},
+    3DI+F+R3{0.182671,0.182793,0.628403,0.927331,0.188926,2.03186}: part2{15.8583};
+end;

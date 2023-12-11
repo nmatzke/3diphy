@@ -1,0 +1,8 @@
+#nexus
+begin sets;
+  charset part1 = AA, 1-185;
+  charset part2 = AA, 186-370;
+  charpartition mymodels =
+    Blosum62+R3{0.133422,0.434244,0.781054,0.957483,0.0855239,2.2709}: part1{45.8621},
+    3DI+F+G4{1.68374}: part2{16.1494};
+end;

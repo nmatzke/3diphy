@@ -1,0 +1,8 @@
+#nexus
+begin sets;
+  charset part1 = 1-231;
+  charset part2 = 232-462;
+  charpartition mymodels =
+    Q.pfam+R3: part1,
+    PMB+F+I+G4: part2;
+end;

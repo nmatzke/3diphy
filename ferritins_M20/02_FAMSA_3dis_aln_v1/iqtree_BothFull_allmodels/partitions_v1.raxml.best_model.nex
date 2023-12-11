@@ -1,0 +1,8 @@
+#nexus
+begin sets;
+  charset part1 = AA, 1-791;
+  charset part2 = AA, 792-1582;
+  charpartition mymodels =
+    VT+F+G4{9.9226}: part1{53.1636},
+    PMB+F+R5{0.083569,0.041842,0.280843,0.175807,0.315589,0.409341,0.262975,0.665893,0.0570235,11.2731}: part2{62.7416};
+end;

@@ -1,0 +1,8 @@
+#nexus
+begin sets;
+  charset part1 = 1-990;
+  charset part2 = 991-1980;
+  charpartition mymodels =
+    Blosum62+F+G4: part1,
+    PMB+F+R5: part2;
+end;
